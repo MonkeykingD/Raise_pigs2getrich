@@ -1,0 +1,4 @@
+/* pages/news/news.wxss */
+.margin-bottom{
+    margin-bottom: 67px;
+}

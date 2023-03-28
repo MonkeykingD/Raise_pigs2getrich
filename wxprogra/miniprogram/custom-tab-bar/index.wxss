@@ -1,0 +1,18 @@
+@import "../static/colorui/icon.wxss";
+@import "../static/colorui/main.wxss";
+.active{
+    color: #39b54a;
+  }
+  .default{
+    color:gray
+  }
+.bg-white{
+    background-color: white;
+}
+.cuIcon-add:before {
+	content: "\e6da";
+}
+.a{
+        opacity: 1;
+        background-color: pink;
+}

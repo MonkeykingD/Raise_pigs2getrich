@@ -1,0 +1,42 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg bg-green padding radius text-center light">
+    <view  bindtap="tapimg" wx:if="{{!authorized}}">
+        <!-- <image src="/images/my/default.jpg" class="png"   mode="widthFix" ></image> -->
+        <view class=" cu-avatar xl round margin-left viewimg"  >
+        </view>
+    </view>
+        <view class="cu-avatar xl round margin-left" style="background-image:url({{userInfo.avatarUrl}});" wx:if="{{authorized}}">
+        </view>
+        <!-- <image class="jpeg" mode="widthFix" src="{{userInfo.avatarUrl}}" wx:if="{{authorized}}"></image> -->
+    <view class="text-xl" wx:if="{{authorized}}">  {{userInfo.nickName}}
+    </view>
+    <view class="text-xl" wx:if="{{!authorized}}">请点击头像授权登录
+      <!-- <text class="text-df>v2.0</text> -->
+    </view>
+
+    <image src="../../images/my/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+  <view class="bg-white padding"></view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/my/about/about" hover-class="none">
+        <text class="cuIcon-infofill text-grey"></text>
+        <text class="text-grey">关于我们</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/my/help/help" hover-class="none">
+        <text class="cuIcon-question text-green"></text>
+        <text class="text-grey">版本历程</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

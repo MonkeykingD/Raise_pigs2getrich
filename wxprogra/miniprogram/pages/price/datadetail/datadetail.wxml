@@ -1,0 +1,54 @@
+<view class="flex-sub text-center bg-white">
+      <view class="text-lg padding-top">
+        <text class="text-black">{{name}}</text>
+      </view>
+      <text class="text-grey">{{date}}</text>
+      <view class="text-lg ">
+        <text class="text-green text-sm">猪粮比 6.06:1</text>
+      </view>
+    </view>
+    <view class="padding flex text-center text-grey bg-white margin-bottom">
+    <view class="flex flex-sub flex-direction solid-right">
+      
+      <view class="margin-bottom-sm">
+         生猪(外三元)</view>
+         <view class="text-xxl text-red">{{zhu}}⬆
+         </view>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      
+      <view class="margin-bottom-sm">
+        玉米(14%水分)</view>
+        <view class="text-xxl text-red">{{yu}}⬆</view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      
+      <view class="margin-bottom-sm">
+        豆粕(43%蛋白)</view>
+        <view class="text-xxl text-green">{{dou}}⬇</view>
+    </view>
+  </view>
+  <swiper-view class="swiper-tab bg-white margin-bottom-xs" scroll-with-animation="true" scroll-x="true">
+            <view bindtap="clickTab1" class="swiper-tab-item  {{currentTab==0?'active':''}}" data-current="0">生猪走势
+            </view>
+            <view bindtap="clickTab2" class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1">玉米走势
+            </view>
+            <view bindtap="clickTab3" class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2">豆粕走势
+            </view>
+    </swiper-view>
+  
+<view wx:if="{{clickTab1==true}}" class="bg-white">
+  <view class="container">
+    <ec-canvas id="mychart-dom-bar1" canvas-id="mychart-bar1" ec="{{ ec1 }}"></ec-canvas>
+  </view>
+</view>
+<view wx:if="{{clickTab2==true}}" class="bg-white">
+  <view class="container">
+    <ec-canvas id="mychart-dom-bar2" canvas-id="mychart-bar2" ec="{{ ec2 }}"></ec-canvas>
+  </view>
+</view>
+<view wx:if="{{clickTab3==true}}"class="bg-white">
+  <view class="container">
+    <ec-canvas id="mychart-dom-bar3" canvas-id="mychart-bar3" ec="{{ ec3 }}"></ec-canvas>
+  </view>
+</view>

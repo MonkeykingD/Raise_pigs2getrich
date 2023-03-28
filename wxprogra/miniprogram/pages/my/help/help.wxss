@@ -1,0 +1,4 @@
+/* pages/my/help/help.wxss */
+.cu-timeline{
+    height: 100vh;
+}

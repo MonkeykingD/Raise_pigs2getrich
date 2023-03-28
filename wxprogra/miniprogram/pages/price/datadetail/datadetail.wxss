@@ -1,0 +1,31 @@
+/* pages/price/datadetail/datadetail.wxss */
+.swiper-tab {
+    width: 100%;
+    height: 110rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border-bottom: 2rpx solid #ccc;
+}
+.swiper-tab-item {
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+    font-size: 28rpx;
+}
+
+.active {
+    color:rgb(4, 128, 0);
+    border-bottom: 5rpx solid rgb(4, 128, 0);
+}
+/**index.wxss**/
+ec-canvas {
+    width: 50vh;
+    height: 50vh;
+  }
+  .container {
+    width: 100%;
+    height: 70vh;
+  }

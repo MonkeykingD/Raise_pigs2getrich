@@ -1,0 +1,36 @@
+<form bindsubmit="formSubmit">
+  <view class="cu-bar search bg-white">
+        <view class="search-form round">
+        <text class="cuIcon-search"></text>
+        <input type="text" placeholder="搜索名称" confirm-type="search" name='searchname' ></input>
+        </view>
+        <view class="action">
+        <button class="cu-btn bg-green shadow-blur round" form-type="submit">搜索</button>
+        </view>
+  </view>
+</form>
+<view class="VerticalBox bg-white">
+  <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(100vh - 375rpx)">
+    <view class="cu-item solids-bottom  {{index==TabCur?'text-green ':''}}" wx:for="{{list}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh )" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+    <view class="padding-top padding-lr" wx:for="{{list}}" wx:key id="main-{{index}}">
+      <view class='cu-bar solid-bottom bg-white'>
+        <view class='action'>
+          <text class='cuIcon-title text-green'></text> {{item.name}} </view>
+      </view>
+      <scroll-view class="cu-list scroll-y menu-avatar" scroll-into-view="shop-{{phone}}">
+        <view class="bg-white   solid-bottom " wx:for="{{item.array}}" id='shop-{{item.phone}}'>
+          <view class="margin-left " bindtap="gomap" data-id='{{item}}'>
+                <view class="text-xl text-black text-bold">{{item.name}}</view>       
+                <view class="cu-tag round lg bg-olive light">联系人</view>{{item.people}} 
+                <view class="padding-bottom-xs padding-top-xs"> <view class="cu-tag round lg bg-blue light">联系电话</view>{{item.phone}}</view>
+                <view class="padding-bottom-xs"> <view class="cu-tag round lg bg-yellow light">地址</view>{{item.address}}</view>
+            </view>
+        </view>
+      </scroll-view>
+      </view>
+  </scroll-view>
+</view>

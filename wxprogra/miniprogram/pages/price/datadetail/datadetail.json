@@ -1,0 +1,5 @@
+{
+    "navigationBarTitleText": "查猪价",
+    "usingComponents": {"ec-canvas": "../../../ec-canvas/ec-canvas"}
+      
+}

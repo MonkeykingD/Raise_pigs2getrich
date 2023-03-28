@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<picker mode="selector" class=" round bg-olive shadow" bindchange="regionChange" value="{{index}}" range="{{province}}">
+    <view >{{region}}</view>
+  </picker>
+
+
+<view class="container bg-white">
+          <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="table padding-lr margin-bottom bg-white">
+  <view class="tr bg-olive menu card-menu radius">
+    <view class="th">{{region}}{{date}}猪价信息</view>
+  </view>
+  <block >
+    <view class="tr bg-g">
+      <view class="td">最高猪价</view>
+      <view class="td">{{maxname}}</view>
+      <view class="td">{{max}}元/kg</view>
+    </view>
+    <view class="tr" >
+      <view class="td">最低猪价</view>
+      <view class="td">{{minname}}</view>
+      <view class="td">{{min}}元/kg</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">平均价格</view>
+      <view class="td">{{region}}</view>
+      <view class="td">{{avg}}元/kg</view>
+    </view>
+  </block>
+</view>
+
+<view class='cu-load load-modal' wx:if="{{loadModal}}">
+    <!-- <view class='cuIcon-emojifill text-orange'></view> -->
+        <image src='/images/logo.png' class='png' mode='aspectFit'></image>
+        <view class='gray-text'>加载中...</view>
+</view>
+
+

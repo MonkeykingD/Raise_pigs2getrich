@@ -1,0 +1,33 @@
+<view class="cu-timeline">
+  <view class="cu-time ">版本历程</view>
+  <view class="cu-item cur cuIcon-noticefill">
+  </view>  
+  <view class="cu-item text-grey cuIcon-evaluate_fill margin-top">
+  </view>
+  <view class="cu-item cur cuIcon-noticefill margin-top margin-bottom">
+  </view>
+  <view class="cu-item text-grey cuIcon-evaluate_fill margin-top">
+  </view>
+  <view class="cu-item cur cuIcon-noticefill margin-top margin-bottom">
+  </view>
+  <view class="cu-item text-grey cuIcon-evaluate_fill margin-top">
+  </view>
+  <view class="cu-item cur cuIcon-noticefill margin-top margin-bottom">
+  </view>
+  <view class="cu-item text-red cuIcon-attentionforbidfill">
+    <view class="bg-red content">
+      <text>version 0.0.？</text> 更多功能，敬请期待
+    </view>
+
+  </view>
+  <view class="cu-item text-grey cuIcon-evaluate_fill">
+    <view class="bg-grey content">
+      <text>version 0.0.2</text> 后端转向云开发，完成yolo部分
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content">
+      <text>version 0.0.1</text> 基本完成静态页面，实现地图切换
+    </view>
+  </view>
+</view>

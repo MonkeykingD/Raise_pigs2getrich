@@ -1,0 +1,10 @@
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于养猪致富顶呱呱</view>
+  <view class='text-content'>
+    <view>Hi！你好~欢迎使用养猪致富顶呱呱小程序！</view>
+    <view class='margin-top-sm'>我们是几位普通的大三学生。</view>
+    <view class='margin-top-sm'>期望用自己所学和小程序的特性为乡村振兴做点什么</view>
+    <view class='margin-top-sm'>尽管存在很多的不足，但请相信我们一直在努力٩(๑❛ᴗ❛๑)۶</view>
+    <view class='margin-top-sm'>更多功能敬请期待！</view>
+  </view>
+</view>

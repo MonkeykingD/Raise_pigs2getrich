@@ -1,0 +1,28 @@
+<view class="cu-bar tabbar  bg-white">
+    <view class="action {{selected === 0 ? 'active' : 'default'}}"  data-index="0" text-green bindtap="switchTab">
+      <view class="cuIcon-copy"></view>
+        {{tabList[0].text}}
+    </view>
+    <view class="action {{selected === 1 ? 'active' : 'default'}}" data-index="1" text-gray bindtap="switchTab">
+      <view class="cuIcon-deliver"></view>
+      {{tabList[1].text}}
+    </view>
+    <view class="action add-action {{selected === 2 ? 'active' : 'default'}}" data-index="2" bindtap="active">
+		<button class="cu-btn cuIcon-cameraaddfill bg-green shadow" bindtap="image"></button>
+      拍照计数
+    </view>
+    <view class="action {{selected === 3 ? 'active' : 'default'}}" data-index="3" text-gray bindtap="switchTab">
+      <view class="cuIcon-rankfill">
+      </view>
+      {{tabList[3].text}}
+    </view>
+    <view class="action {{selected === 4 ? 'active' : 'default'}}" data-index="4" text-gray bindtap="switchTab">
+      <view class="cuIcon-my">
+      </view>
+      {{tabList[4].text}}
+    </view>
+    <!-- <view class='cu-load load-modal a' wx:if="{{loadModal}}">
+        <image src='/images/logo.png' class='png ' mode='aspectFit'></image>
+        <view class='gray-text'>加载中...</view>
+    </view> -->
+</view>

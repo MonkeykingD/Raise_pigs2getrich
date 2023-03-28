@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+    height: 60vh;
+  }
+  
+  ec-canvas {
+    width: 100%;
+    height: 85%;
+  }
+  .margin-bottom{
+    margin-bottom: 8.5vh;
+}
+  picker{
+      /* background-color: rgb(53, 199, 96); */
+
+      line-height:2.5rem;
+      color: #ffffff;
+      font-size: 40rpx;
+      text-align:center;
+      font-family: "黑体";
+  }
+
+  .table {
+      
+    border: 0px solid darkgray;
+  }
+  .tr {
+    font-size: 35rpx;
+    border-radius: 10px; 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+  }
+  .td {
+      
+      width:40%;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .bg-g{
+    background: #f5f9e6;
+  }
+  .th {
+     
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+  }
